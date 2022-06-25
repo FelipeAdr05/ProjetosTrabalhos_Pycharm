@@ -8,11 +8,23 @@ layout = [
     [sg.Text('Senha', size=(7, 1)), sg.Input()],
     [sg.Checkbox('Salvar Login?')],
     [sg.Text('Esqueceu a senha? Clique Aqui')],
-    [sg.Button('Entrar'), sg.Button('Cadastrar')],
-
+    [sg.Button('Entrar', font=('bold', 10)), sg.Button('Cadastrar', font=('bold', 10))],
 ]
 
-janela = sg.Window('Login', layout=layout, element_justification='c')
+janela = sg.Window('Tela de Login', layout=layout, element_justification='center')
 janela.read()
 janela.close()
-#faddfgdgs
+
+
+'''
+comandos: 
+
+sg.Image
+sg.theme
+
+formatações:
+
+filename=
+size=
+element_justification=
+'''
