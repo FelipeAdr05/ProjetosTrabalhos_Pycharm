@@ -27,4 +27,4 @@ while True:
     sleep(0.1)
     pi.hotkey('ctrl', 'v')  # cola a mensagem escolhida
     sleep(0.1)
-    pi.press('enter') # envia a mensagem para o CA
+    # pi.press('enter') # envia a mensagem para o CA
