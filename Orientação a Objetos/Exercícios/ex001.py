@@ -7,7 +7,7 @@ class Bola:
     def trocacor(self, cor):
         while True:
             print(f'A cor da bola é {cor}')
-            r = input('Deseja mudar a cor da bola? [S] ou [N]\n>>> ').upper()
+            r = input(' Deseja mudar a cor da bola? [S] ou [N]\n>>> ').upper()
             if r == 'S':
                 cor = input('Qual cor você quer? ')
             else:
