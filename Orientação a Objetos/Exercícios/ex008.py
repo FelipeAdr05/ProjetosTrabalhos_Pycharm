@@ -33,6 +33,7 @@ class Carro:
                 print(f'Você andou {dist}Km e consumiu {gasto:.2f}L de gasolina.')
                 self.qnt_tanque -= gasto
 
+
 def main():
     nome_carro = input('Qual o nome do carro: ')
     gas = float(input('Qual o consumo do carro? (Km/l) '))
@@ -45,8 +46,7 @@ def main():
 [1] Andar   
 [2] Abastecer                           
 [3] Verificar nível de gasolina      
-[4] Sair                             
-''')
+[4] Sair''')
         op = input('>>> ')
         if op == '1':
             carro1.andar()
