@@ -20,6 +20,8 @@ conexao = sqlite3.connect('mercado.db')
 cursor = conexao.cursor()
 
 
+
+
 cursor.execute('INSERT INTO Clientes (Nome_cliente, CPF_cliente, CEP, Número)'
                f'VALUES ("{lista_cliente[0]}", "{lista_cliente[1]}", "{lista_cliente[2]}", "{lista_cliente[3]}")')
 
