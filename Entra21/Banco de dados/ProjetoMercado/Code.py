@@ -1,6 +1,29 @@
 import sqlite3
 import requests
 
+class Cliente:
+    def __init__(self, nome, cpf, cep, numero):
+        self.nome = nome
+        self.cpf = cpf
+        self.cep = cep
+        self.numero = numero
+
+class Produtos:
+    def __init__(self, nome, familia, cod_barra):
+        self.nome = nome
+        self.familia = familia
+        self.cod_barra = cod_barra
+
+class Vendas:
+    def __init__(self, data, cod_barras, cpf, quantidade, valor_unitario, valor_total):
+        self.data = data
+        self.cod_barras = cod_barras
+        self.cpf = cpf
+        self.quantidade = quantidade
+        self.valor_unitario = valor_unitario
+        self.valor_total = valor_total
+        
+
 conexao = sqlite3.connect('mercadobanco.db')
 cursor = conexao.cursor()
 
