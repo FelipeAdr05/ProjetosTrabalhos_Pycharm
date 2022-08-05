@@ -22,7 +22,7 @@ class Vendas:
         self.quantidade = quantidade
         self.valor_unitario = valor_unitario
         self.valor_total = valor_total
-        
+
 
 conexao = sqlite3.connect('mercadobanco.db')
 cursor = conexao.cursor()
